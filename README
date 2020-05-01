@@ -1,4 +1,6 @@
 Simple utility to convert plain text files to .typ files for GTypist.
 
 Any non-ascii characters will be replaced with spaces. 
-Use 'iconv -f <encoding> -t ASCII//TRANSLIT in_file > out_file' to perform best-effort encoding conversion to ASCII. 
+Use 'iconv -f <encoding> -t ascii//TRANSLIT in_file > out_file' to perform best-effort encoding conversion to ASCII. 
+
+Use 'csplit input.txt /Chapter/ {*}' to split a text file by the keyword "Chapter"
